@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Ma Todo List</title>
+  <link href= "/public/assets/styles.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+	</header>
+	<div id="container">
+		<div class="titles">
+			<h1>Ma todo list</h1>
+			<h2>Ajoutez et supprimez des éléments</h2>
+		</div>
+		<div class="tasks">	
+			<div class="form">
+					<form action="/add" method="post">
+						<input type="text" name="taskName">
+						<input type="submit" value="Ajouter une tâche">
+					</form>
+			</div>
+			<div class="list">
+				<ul>
+						<%
+						tasks.forEach(function(task, index) { 
+						%>
+						<li>
+							- <%= task %>
+							<a href="/remove/<%= index %>">✕</a>
+						</li>
+						<% }); %>
+					</ul>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
+
