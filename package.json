@@ -1,0 +1,25 @@
+{
+  "name": "basic-todolist-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serveur.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rochebleue/basic-todolist-nodejs.git"
+  },
+  "author": "Carole Cailleux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rochebleue/basic-todolist-nodejs/issues"
+  },
+  "homepage": "https://github.com/rochebleue/basic-todolist-nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
